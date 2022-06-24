@@ -1,1 +1,90 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 768px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+button {
+  border: 0;
+  background: #fff;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+  height: 40px;
+  width: 9em;
+  border-radius: 20px;
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 85%;
+  position: absolute;
+  -webkit-transform: translate(7%, 13%);
+          transform: translate(7%, 13%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 0;
+  height: 100%;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 30px;
+  color: #fff;
+  height: 400px;
+}
+
+section h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+}
+
+section p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+
+#sedans {
+  background: #e38826;
+}
+
+#suv {
+  background: #006970;
+}
+
+#luxury {
+  background: #004241;
+}
+
+.sedan-btn {
+  color: #e38826;
+}
+
+.suv-btn {
+  color: #006970;
+}
+
+.luxury-btn {
+  color: #004241;
+}
+/*# sourceMappingURL=style.css.map */

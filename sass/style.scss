@@ -25,3 +25,74 @@ $to-desktop : 1024px;
     height: 100%;
 }
 
+@media screen and (min-width: $to-tablet) {
+    main {
+        display: flex;
+    }
+}
+
+//Components
+
+button {
+    border: 0;
+    background: #fff;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 40px;
+    width: 9em;
+    border-radius: 20px;
+}
+
+
+*,::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 85%;
+    position: absolute;
+    transform: translate(7%, 13%);
+    @include sections-in-column();
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+    color: #fff;
+    height: 400px;
+    h2 {
+        font-family: 'Big Shoulders Display', cursive;
+        text-transform: uppercase;
+    }
+    p {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: $p-size;
+    }
+}
+
+#sedans {
+    background: $orange;
+}
+
+#suv {
+    background: $blue;
+}
+
+#luxury {
+    background: $dark-blue;
+}
+
+.sedan-btn {
+    color: $orange;
+}
+
+.suv-btn {
+    color: $blue;
+}
+
+.luxury-btn {
+    color: $dark-blue;
+}
